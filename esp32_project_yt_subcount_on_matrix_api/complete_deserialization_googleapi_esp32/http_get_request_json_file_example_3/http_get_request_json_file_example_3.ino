@@ -2,10 +2,10 @@
 #include <HTTPClient.h>
 #include <ArduinoJson.h>
  
-const char* ssid = "Tony-Stark Indeed";
-const char* password =  "73884spk45";
+const char* ssid = "your";
+const char* password =  "your";
 //const char* name="UCcuzwvvUHneSG_AcSkFWQ9Q";
-//const char* key="AIzaSyC82IgHM9dMnGIPrd8IMXe74rDnuAbMpOY"; 
+//const char* key="key"; 
  
 void setup() {
  
@@ -28,7 +28,7 @@ void loop() {
  
     HTTPClient http;
  
-    http.begin("https://www.googleapis.com/youtube/v3/channels?part=statistics&id=UCcuzwvvUHneSG_AcSkFWQ9Q&key=AIzaSyC82IgHM9dMnGIPrd8IMXe74rDnuAbMpOY"); //Specify the URL
+    http.begin("https://www.googleapis.com/youtube/v3/channels?part=statistics&id=UCcuzwvvUHneSG_AcSkFWQ9Q&key=youur key"); //Specify the URL
     int httpCode = http.GET();                                        //Make the request
  
     if (httpCode > 0) { //Check for the returning code

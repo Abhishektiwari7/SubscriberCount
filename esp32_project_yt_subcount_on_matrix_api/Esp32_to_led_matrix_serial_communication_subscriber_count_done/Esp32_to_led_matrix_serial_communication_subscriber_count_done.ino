@@ -7,8 +7,8 @@ HardwareSerial sender( 2 );
 #define RXD2 16                    //esp32 has 3 UART in which we gonn use uart 2, 
 #define TXD2 17
  
-const char* ssid ="Tony-Stark Indeed";              //wifi's SSID
-const char* password ="SG3524INV";                 //wifi's Password
+const char* ssid ="your";              //wifi's SSID
+const char* password ="your";                 //wifi's Password
 int sub;                                            // subcriber count as a integer for use in different functions
 const char* serialdata;                             //serial data send to led matrix which has subscriber count
 const char* subCount;                               // subcriber count but as a string for serial communication
@@ -59,7 +59,7 @@ void subscriber()
 {     if ((WiFi.status() == WL_CONNECTED)) { //Check the current connection status
  
     HTTPClient http;
-    http.begin("https://www.googleapis.com/youtube/v3/channels?part=statistics&id=UCcuzwvvUHneSG_AcSkFWQ9Q&key=AIzaSyAvqDmhdN7WOxxzSXtDCmq9XyounNwWvwQ"); //Specify the URL
+    http.begin("https://www.googleapis.com/youtube/v3/channels?part=statistics&id=UCcuzwvvUHneSG_AcSkFWQ9Q&key=yourkeyy"); //Specify the URL
     int httpCode = http.GET();                                        //Make the request
     if (httpCode > 0)                               //in return youtube api gives you json file in which details are specified in class form
      { 

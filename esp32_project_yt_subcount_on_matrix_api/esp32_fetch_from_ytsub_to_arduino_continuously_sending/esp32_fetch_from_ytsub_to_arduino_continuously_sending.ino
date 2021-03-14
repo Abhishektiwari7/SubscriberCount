@@ -6,8 +6,8 @@ HardwareSerial sender( 2 );
 #define RXD2 16
 #define TXD2 17
  
-const char* ssid = "Tony-Stark Indeed";
-const char* password =  "73884spk45";
+const char* ssid = "your";
+const char* password =  "your";
 int sub;
 const char* serialdata;
 const char* subCount;
@@ -39,7 +39,7 @@ void subscriber()
 {     if ((WiFi.status() == WL_CONNECTED)) { //Check the current connection status
  
     HTTPClient http;
-    http.begin("https://www.googleapis.com/youtube/v3/channels?part=statistics&id=UCcuzwvvUHneSG_AcSkFWQ9Q&key=AIzaSyC82IgHM9dMnGIPrd8IMXe74rDnuAbMpOY"); //Specify the URL
+    http.begin("https://www.googleapis.com/youtube/v3/channels?part=statistics&id=UCcuzwvvUHneSG_AcSkFWQ9Q&key=key"); //Specify the URL
     int httpCode = http.GET();                                        //Make the request
     if (httpCode > 0) 
      { 

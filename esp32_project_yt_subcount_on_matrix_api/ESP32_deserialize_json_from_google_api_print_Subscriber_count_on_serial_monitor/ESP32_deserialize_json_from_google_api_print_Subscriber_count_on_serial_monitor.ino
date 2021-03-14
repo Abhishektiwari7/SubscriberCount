@@ -28,7 +28,7 @@ void loop() {
  
     HTTPClient http;
  
-    http.begin("https://www.googleapis.com/youtube/v3/channels?part=statistics&id=UCcuzwvvUHneSG_AcSkFWQ9Q&key=AIzaSyAvqDmhdN7WOxxzSXtDCmq9XyounNwWvwQ"); //Specify the URL
+    http.begin("https://www.googleapis.com/youtube/v3/channels?part=statistics&id=UCcuzwvvUHneSG_AcSkFWQ9Q&key=yourkey"); //Specify the URL
     int httpCode = http.GET();                                        //Make the request
  
      if (httpCode > 0)                               //in return youtube api gives you json file in which details are specified in class form
